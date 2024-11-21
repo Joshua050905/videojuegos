@@ -2,25 +2,25 @@
   {
     "id": 1,
     "nombre": "Dante's Inferno",
-    "compañia": "Visceral Games",
+    "compania": "Visceral Games",
     "fechaLanzamiento": "09-02-2010"
   },
   {
     "id": 2,
     "nombre": "God of War 2018",
-    "compañia": "Santa Monica Studio",
+    "compania": "Santa Monica Studio",
     "fechaLanzamiento": "20-04-2018"
   },
   {
     "id": 3,
     "nombre": "Elden Ring",
-    "compañia": "FromSoftware",
+    "compania": "FromSoftware",
     "fechaLanzamiento": "25-02-2022"
   },
   {
     "id": 4,
     "nombre": "Minecraft",
-    "compañia": "Mojang Studios",
+    "compania": "Mojang Studios",
     "fechaLanzamiento": "18-11-2011"
   }
 ]
