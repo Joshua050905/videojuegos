@@ -16,8 +16,8 @@
             const VIDEOJUEGOS = document.getElementById("vídeojuegos_lista");
             data.forEach(videojuego => {
                 const LIST_ITEM = document.createElement('li');
-                LIST_ITEM.textContent =` ${videojuego.nombre} compañía desarrolladora: ${videojuego.compania} $ fecha de lanzamiento {videojuego.fechaLanzamiento}`;
-                SERIES.appendChild(LIST_ITEM);
+                LIST_ITEM.textContent = `${videojuego.nombre} compañía desarrolladora: ${videojuego.compania} fecha de lanzamiento: ${videojuego.fechaLanzamiento}`;
+                VIDEOJUEGOS.appendChild(LIST_ITEM);
             });
         }).catch(error => console.error('Error al consumir el JSON:', error));
     </script>
