@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeojuegos</title>
+</head>
+<body>
+    <h1>Vídeojuegos</h1>
+    <ul id="vídeojuegos_lista"></ul>
+    <script>
+        fetch('https://cityunu.github.io/videojuegos/data.json')
+              .then(response=> response.json())
+              .then(data => {
+            console.log('Datos recibidos:', data);
+            const VIDEOJUEGOS = document.getElementById("vídeojuegos_lista");
+            data.forEach(videojuego => {
+                const LIST_ITEM = document.createElement('li');
+                LIST_ITEM.textContent =` ${videojuego.nombre} compañía desarrolladora: ${videojuego.compania} $ fecha de lanzamiento {videojuego.fechaLanzamiento}`;
+                SERIES.appendChild(LIST_ITEM);
+            });
+        }).catch(error => console.error('Error al consumir el JSON:', error));
+    </script>
+</body>
+</html>
